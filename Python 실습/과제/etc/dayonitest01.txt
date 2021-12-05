@@ -1,0 +1,3 @@
+   Student           Name   Midterm   Final   Average   Grade 
+----------------------------------------------------------------
+ 2018146015    lee dayeon     100       2      51.0       F    
