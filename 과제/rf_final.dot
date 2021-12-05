@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="worst_concave_points <= 0.121\ngini = 0.48\nsamples = 192\nvalue = [77, 115]\nclass = Bad", fillcolor="#bedff6"] ;
+1 [label="gini = 0.18\nsamples = 80\nvalue = [72, 8]\nclass = Good", fillcolor="#e88f4f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="worst_area <= 736.95\ngini = 0.085\nsamples = 112\nvalue = [5, 107]\nclass = Bad", fillcolor="#42a2e6"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.463\nsamples = 11\nvalue = [4, 7]\nclass = Bad", fillcolor="#aad5f4"] ;
+2 -> 3 ;
+4 [label="gini = 0.02\nsamples = 101\nvalue = [1, 100]\nclass = Bad", fillcolor="#3b9ee5"] ;
+2 -> 4 ;
+}
