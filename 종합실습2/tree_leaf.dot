@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ROLLING_TEMP_T5 <= 1000.5\ngini = 0.433\nsamples = 504\nvalue = [344, 160]", fillcolor="#f1bc95"] ;
+1 [label="FUR_SZ_TEMP <= 1175.5\ngini = 0.244\nsamples = 401\nvalue = [344, 57]", fillcolor="#e9965a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ROLLING_DESCALING <= 5.5\ngini = 0.19\nsamples = 385\nvalue = [344, 41]", fillcolor="#e89051"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="FUR_EXTEMP <= 1137.5\ngini = 0.175\nsamples = 381\nvalue = [344, 37]", fillcolor="#e88f4e"] ;
+2 -> 4 ;
+5 [label="PT_LTH <= 11013.0\ngini = 0.061\nsamples = 190\nvalue = [184, 6]", fillcolor="#e6853f"] ;
+4 -> 5 ;
+6 [label="gini = 0.311\nsamples = 26\nvalue = [21, 5]", fillcolor="#eb9f68"] ;
+5 -> 6 ;
+7 [label="gini = 0.012\nsamples = 164\nvalue = [163, 1]", fillcolor="#e5823a"] ;
+5 -> 7 ;
+8 [label="ROLLING_DESCALING <= 7.5\ngini = 0.272\nsamples = 191\nvalue = [160, 31]", fillcolor="#ea995f"] ;
+4 -> 8 ;
+9 [label="gini = 0.0\nsamples = 6\nvalue = [0, 6]", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="gini = 0.234\nsamples = 185\nvalue = [160, 25]", fillcolor="#e99558"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 16\nvalue = [0, 16]", fillcolor="#399de5"] ;
+1 -> 11 ;
+12 [label="gini = 0.0\nsamples = 103\nvalue = [0, 103]", fillcolor="#399de5"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
